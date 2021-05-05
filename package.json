@@ -5,7 +5,7 @@
 	"main": "client.js",
 	"scripts": {
 		"run:client": "node client.js",
-		"run:authorization": "node authorization-server.js",
+		"run:authorization": "npx nodemon authorization-server.js",
 		"run:protected": "node protected-resource.js",
 		"test": "mocha --exit ./test/**/*",
 		"test-dev": "mocha --watch ./test/**/*"

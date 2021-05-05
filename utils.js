@@ -8,12 +8,12 @@ function randomString() {
 
 function containsAll(arr1, arr2) {
 	const arr1Set = new Set()
-	for (let i = 0; i < arr1.length; i++) {
-		arr1Set.add(arr1[i])
+	for (let arr1value of arr1) {
+		arr1Set.add(arr1value)
 	}
 
-	for (let i = 0; i < arr2.length; i++) {
-		if (!arr1Set.has(arr2[i])) {
+	for (let arr2value of arr2) {
+		if (!arr1Set.has(arr2value)) {
 			return false
 		}
 	}
